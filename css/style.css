@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0e0d0d;
+}
+
+
+/* estilos header*/
+
+header{
+    background-color: #0e0d0d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 10rem;
+    width: 20rem;
+    padding: 1rem;
+}
+/*home*/
+
+/*carousek*/
+.carrousel-inner{
+    height: 200px;
+}
+
+.my-carousel{ 
+    background-color: rgba(88, 3, 3, 0.3);
+    text-align: left;
+    left: 0;
+    top: 0;
+    padding: 30px 45px;
+    width: 340px;
+    height: 100%;
+}
+
+.my-carousel h5{
+    font-size: 26px;
+    line-height: 30px;
+  
+}
+
+.my-carousel:hover{
+    border-bottom: 2px solid red;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 5, 5, 0.2), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.carousel-dos{
+    background-color: rgba(88, 3, 3, 0.4);
+}
+
+.carousel-dos:hover{
+    border-bottom: 2px solid red;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 5, 5, 0.2), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/*productos*/
+
+/*estilos nav bt*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.menu-color{
+    color: whitesmoke;
+}
+
+.menu-color:hover{
+    border-bottom: 2px solid red;
+    color: whitesmoke;
+}
+
+/*estilos group-card*/
+
+.my-card{
+    padding-top: 15px;
+}
+
+.main-border{
+    border-color: red;
+    margin: auto;
+    margin-left: 68px;
+    
+}
+
+.main-card{
+    display: inline-block;
+    text-align: center;  
+}
+
+.main-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 5, 5, 0.473), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+/*sobre nosotros*/
+.s-n p{
+    color: whitesmoke;
+   text-align: center;
+    }
+    
+/*galeria img sobre nosotros*/
+section{
+    display: flex;
+    width: 95%;
+    height: 500px;
+    text-align: center;
+    
+ }
+  section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+
+
+
+/*sedes*/
+.sedes{
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*contactos*/
+
+.contacto{
+    color: whitesmoke;
+    text-align: center;
+}
+.contacto ul{
+    list-style: none;
+    display: inline-block;
+}
+
+/*estilos de footer*/
+
+footer{
+  display: grid;
+  grid-template-columns: 56% 44%;
+  grid-template-rows: repeat(2, 50%) ;
+  margin-top: 50px;
+}
+
+h3{
+    color: whitesmoke;
+    font-size: small;
+}
+.derechos{
+    grid-column: span 2;
+    text-align: center;
+}
+
+.BC{
+    grid-column: span 1;
+    text-align: right;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.redes{
+    grid-column: 2/3;
+    padding-left: 0.5rem;
+}
+
+.l1{
+    width: 1rem;
+    height: 1rem;
+}
+
+/* mq de tablet */
+
+@media screen and (min-width:600px){
+  /*section sobre nosotros*/
+  section{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+ }
+ 
+}
+
+/*mq pc */
+
+@media screen and (min-width:1024px) {
+
+    /*ajustes de logo */
+    .logo {
+        height: 15rem;
+        width: 35rem;
+        padding: 1rem;
+    }
+
+    /* ajustes del nav */
+    li {
+        font-size: large;
+    }
+
+    /* ajustes del main */
+    .contenedor {
+        grid-template-columns: 4fr 1fr;
+
+    }
+
+    /* ajustes del footer*/
+
+    footer {
+        grid-template-columns: 52.5% 47.5%;
+    }
+
+    /*menu bt*/
+    .nav-bt{
+        margin-left: 353px;
+    }
+
+}
+
+
+
+
+
